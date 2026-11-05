@@ -1,0 +1,188 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1120;
+  color: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  border-bottom: 1px solid #263247;
+  background: #0b1120;
+}
+
+.navbar h2 {
+  color: #60a5fa;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar span {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Main Section */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.quote-card {
+  width: 100%;
+  max-width: 750px;
+  padding: 55px 45px;
+  text-align: center;
+  background: #172238;
+  border: 1px solid #334155;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* Heading */
+.tagline {
+  color: #60a5fa;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quote-card h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.description {
+  color: #94a3b8;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Quote Box */
+.quote-box {
+  padding: 35px 20px;
+  margin-bottom: 30px;
+  background: #0f172a;
+  border-radius: 15px;
+  border: 1px solid #334155;
+}
+
+.quote-box h2 {
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.author {
+  color: #60a5fa;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actions button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.actions .secondary-button {
+  background: transparent;
+  border: 1px solid #60a5fa;
+  color: #60a5fa;
+}
+
+.actions .secondary-button:hover {
+  background: #1e3a5f;
+}
+
+/* Message */
+.message {
+  color: #60a5fa;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #64748b;
+  border-top: 1px solid #263247;
+  font-size: 13px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .quote-card {
+    padding: 35px 20px;
+  }
+
+  .quote-card h1 {
+    font-size: 30px;
+  }
+
+  .quote-box h2 {
+    font-size: 19px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}
