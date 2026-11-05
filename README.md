@@ -27,3 +27,6 @@ Frontend: cd client; npm install; npm run dev
 
 ## Author
 Student Project
+## Live Demo
+
+[Click here to view the Live Demo](https://quote-generator-with-history.vercel.app/)
